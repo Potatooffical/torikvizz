@@ -59,7 +59,7 @@ function nagyit(id){
         <button onclick="gombkattint('${keveres[2]}')">${keveres[2]}</button>
         <button onclick="gombkattint('${keveres[3]}')">${keveres[3]}</button>
         `
-    document.getElementById("pontszam").innerHTML=`Pontok: ${helyes}/${osszes} ${helyes}válasz  ${Math.round(helyes*100/osszes),0}%`
+   
     document.getElementById("pontszam").style.textAlign="Center"
     document.getElementById("pontszam").style.fontSize="20px"
     document.getElementById("pontszam").style.margin="20px"
@@ -99,7 +99,7 @@ function gombkattint(aktualisfelirat){
     
     //alert(aktualisorszam)
     nagyit(aktualisorszam)
-    
+    document.getElementById("pontszam").innerHTML=`Pontok: ${helyes}/${osszes} ${helyes}válasz  ${Math.round(helyes*100/osszes),0}%`   
 }
 function korvonal(id){
     document.getElementById(id).style.border="solid 2px blue"
